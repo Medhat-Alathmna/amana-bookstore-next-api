@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
     }
 
     const { username, password } = auth;
-    if (username !== 'admin' || password !== 'password') {
+    if (username !== 'medhat' || password !== 'Hero') {
         return new NextResponse('Authentication failed: Invalid credentials.', {
             status: 401,
             headers: { 'WWW-Authenticate': 'Basic realm="Restricted Area"' },
